@@ -19,7 +19,7 @@ end
 
 def parse
   #i need to take in a list of emails in csv or spaced format and return only the unique ones
-  if @email.include? ","
+  if (@email.include? "," && @email.include? " " == nil)
     #if there are commas in the string containing emails, split on the commas
     newArray = @email.split(",")
     #remove leading whitespaces
