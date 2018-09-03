@@ -34,13 +34,6 @@ def parse
   end}
   #we just made an array within an array, so now we flatten to one dimension
     newArray.flatten
-  #elsif (!@email.include? ",")
-    #if there are no commas, split on the whitespace
-  #  newArray = @email.split(",")
-    #remove leading whitespaces
-  #  newArray.map! {|i| i = i.lstrip}
-    #return the final product
-  #  newArray
   else
     @email.split
   end
