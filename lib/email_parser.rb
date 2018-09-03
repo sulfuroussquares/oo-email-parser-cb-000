@@ -8,6 +8,7 @@ class EmailParser
   @@all = []
 
 def initialize
+  #i need to initialize with a list of emails either in csv or space format
   @@all << self
 end
 
@@ -16,6 +17,7 @@ def self.all
 end
 
 def self.parse(email)
+  #i need to take in a list of emails in csv or spaced format and return only the unique ones
   @@all
 end
 
