@@ -23,6 +23,7 @@ def parse
   else
     #if there are no commas, split on the whitespace
     @email.split
+  end
 end
 
 end
