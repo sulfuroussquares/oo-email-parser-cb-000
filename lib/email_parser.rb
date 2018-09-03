@@ -32,7 +32,7 @@ def parse
   else
     i = i
   end}
-    newArray
+    newArray.flatten
   #elsif (!@email.include? ",")
     #if there are no commas, split on the whitespace
   #  newArray = @email.split(",")
