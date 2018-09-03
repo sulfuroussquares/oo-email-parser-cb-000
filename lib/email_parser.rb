@@ -33,7 +33,7 @@ def parse
     i = i
   end}
   #we just made an array within an array, so now we flatten to one dimension
-    newArray.flatten
+    newArray = newArray.flatten
   else
     newArray = @email.split
   end
