@@ -19,7 +19,7 @@ end
 
 def parse
   #i need to take in a list of emails in csv or spaced format and return only the unique ones
-  #check if email string includes only csv
+  #check if email string includes csv and whitespace
   if (@email.include? ",") && @email.include?(" ")
     #if there are commas in the string containing emails, split on the commas
     newArray = @email.split(",")
@@ -32,6 +32,7 @@ def parse
   else
     i = i
   end}
+  #we just made an array within an array, so now we flatten to one dimension
     newArray.flatten
   #elsif (!@email.include? ",")
     #if there are no commas, split on the whitespace
