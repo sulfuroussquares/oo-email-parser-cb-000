@@ -9,7 +9,6 @@ class EmailParser
 def initialize
   #i need to initialize with a list of emails either in csv or space format
   @email = email
-  @@all << self
 end
 
 def self.all
