@@ -27,7 +27,7 @@ def parse
     newArray.map! {|i| i = i.lstrip}
     #cycle through newArray and split entries containing spaces
     newArray.map! {|i|
-    if (i.include?(" ")
+    if (i.include?(" "))
     i = i.split(" ")
   end}
     newArray
