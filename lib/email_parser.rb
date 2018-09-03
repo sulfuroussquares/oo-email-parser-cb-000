@@ -27,8 +27,14 @@ def parse
     newArray.map! {|i| i = i.lstrip}
     #return the final product
     newArray
-  elsif (!@email.include? "," && @email.include?(" "))
+  elsif (!@email.include? ",")
     #if there are no commas, split on the whitespace
+    newArray = @email.split(",")
+    #remove leading whitespaces
+    newArray.map! {|i| i = i.lstrip}
+    #return the final product
+    newArray
+  else
     @email.split
   end
 end
