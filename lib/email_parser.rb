@@ -37,6 +37,6 @@ def parse
   #else
   #  @email.split
 #  end
-end
+#end
 
 end
