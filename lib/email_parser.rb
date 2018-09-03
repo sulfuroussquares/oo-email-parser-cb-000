@@ -29,6 +29,8 @@ def parse
     newArray.map! {|i|
     if (i.include?(" "))
     i = i.split(" ")
+  else
+    i = i
   end}
     newArray
   #elsif (!@email.include? ",")
