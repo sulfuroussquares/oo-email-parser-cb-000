@@ -15,7 +15,7 @@ def self.all
   @@all
 end
 
-def parse(email)
+def parse
   #i need to take in a list of emails in csv or spaced format and return only the unique ones
   @@all
 end
