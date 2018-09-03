@@ -36,7 +36,7 @@ def parse
     newArray.flatten
   #else
   #  @email.split
-#  end
+  end
 end
 
 end
