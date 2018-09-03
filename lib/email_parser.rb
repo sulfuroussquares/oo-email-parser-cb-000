@@ -34,8 +34,8 @@ def parse
   end}
   #we just made an array within an array, so now we flatten to one dimension
     newArray.flatten
-  #else
-  #  @email.split
+  else
+    @email.split
   end
 end
 
