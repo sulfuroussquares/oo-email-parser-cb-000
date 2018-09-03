@@ -21,6 +21,7 @@ def parse
     #if there are commas in the string containing emails, split on the commas
   else
     #if there are no commas, split on the whitespace
+    @email.split
 end
 
 end
