@@ -15,9 +15,15 @@ def self.all
   @@all
 end
 
+
+my_string = "abcdefg"
+if my_string.include? "cde"
+   puts "String includes 'cde'"
+end
+
 def parse
   #i need to take in a list of emails in csv or spaced format and return only the unique ones
-  if @email.detect {|i| i == ","}
+  if @email.include? ","
     #if there are commas in the string containing emails, split on the commas
     @email.split()
   else
