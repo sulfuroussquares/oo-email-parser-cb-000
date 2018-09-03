@@ -6,7 +6,7 @@ class EmailParser
   attr_accessor :email
   @@all = []
 
-def initialize
+def initialize(email)
   #i need to initialize with a list of emails either in csv or space format
   @email = email
 end
