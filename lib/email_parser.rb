@@ -23,6 +23,7 @@ def parse
     #if there are commas in the string containing emails, split on the commas
     newArray = @email.split(",")
     newArray.each {|i| i.lstrip}
+    newArray
   else
     #if there are no commas, split on the whitespace
     @email.split
