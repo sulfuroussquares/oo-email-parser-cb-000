@@ -37,6 +37,9 @@ def parse
   else
     @email.split
   end
+  @email = @wmail.uniq
 end
+
+
 
 end
