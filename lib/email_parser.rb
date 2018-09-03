@@ -6,6 +6,9 @@ class EmailParser
   attr_accessor :email
   @@all = []
 
+def initialize
+  @@all << self
+end
 
 def self.all
   @@all
