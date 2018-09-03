@@ -37,7 +37,7 @@ def parse
   else
     newArray = @email.split
   end
-  
+  newArray = newArray.uniq
 end
 
 
